@@ -261,7 +261,24 @@ const SignUpForm = (props) => {
       />
     );
   };
-
+  const renderSignInOptionsBreak = () => {
+    return (
+      <Grid {...styles.passwordGridProps}>
+        <Grid {...styles.breakProps}>
+          <div style={{display:'flex'}}>
+            <hr style={{ width: '48%', border: `1px solid ${theme.palette.Greyscale[600]}`, height: '1px', marginTop: '10px'}} />
+            <p style={{ margin: '0 8px', fontSize: '20px' }}>Or</p>
+            <hr style={{ width: '48%', border: `1px solid ${theme.palette.Greyscale[600]}`, height: '1px', marginTop: '10px' }} />
+          </div>
+        </Grid>
+      </Grid>
+    )
+  };
+  const renderGoogleAuth = () => {
+    return (
+      <GoogleAuth />
+    )
+  };
   return (
     <FormContainer defaultValues={DEFAULT_FORM_VALUES} onSuccess={handleSubmit}>
       <Grid {...sharedStyles.formGridProps}>
@@ -269,7 +286,8 @@ const SignUpForm = (props) => {
         {renderFullNameInput()}
         {renderPasswordAndConfirmPasswordInputs()}
         {renderSubmitButton()}
-        {<GoogleAuth />}
+        {renderSignInOptionsBreak()}
+        {renderGoogleAuth()}
       </Grid>
     </FormContainer>
   );

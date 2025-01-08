@@ -147,7 +147,6 @@ const SignInForm = (props) => {
       </Grid>
     );
   };
-
   const renderSubmitButton = () => {
     return (
       <GradientOutlinedButton
@@ -158,6 +157,19 @@ const SignInForm = (props) => {
         {...styles.submitButtonProps}
       />
     );
+  };
+  const renderSignInOptionsBreak = () => {
+    return (
+      <Grid {...styles.passwordGridProps}>
+        <Grid {...styles.breakProps}>
+          <div style={{display:'flex'}}>
+            <hr style={{ width: '48%', border: `1px solid ${theme.palette.Greyscale[800]}`, height: '1px', marginTop: '10px'}} />
+            <p style={{ margin: '0 8px', fontSize: '20px' }}>Or</p>
+            <hr style={{ width: '48%', border: `1px solid ${theme.palette.Greyscale[800]}`, height: '1px', marginTop: '10px' }} />
+          </div>
+        </Grid>
+      </Grid>
+    )
   };
   const renderGoogleAuth = () => {
     return (
@@ -173,6 +185,7 @@ const SignInForm = (props) => {
         {renderEmailInput()}
         {renderPaswordInput()}
         {renderSubmitButton()}
+        {renderSignInOptionsBreak()}
         {renderGoogleAuth()}
       </Grid>
     </FormContainer>

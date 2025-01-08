@@ -106,13 +106,13 @@ const styles = {
     }),
   },
   policyInfoGridConfig: {
+    marginTop: "-6.5vh",
     container: true,
     item: true,
     flexDirection: 'column',
+    width: '100%',
     alignItems: 'center',
     sx: (theme) => ({
-      borderTop: `1px solid ${theme.palette.Greyscale[100]}`,
-      paddingTop: '14px',
       fontSize: '12px',
       [theme.breakpoints.down('mobile')]: {
         fontSize: '10px',

@@ -9,6 +9,11 @@ const styles = {
     item: true,
     mobileSmall: 12,
   },
+  breakProps: { 
+    item: true, 
+    mobileSmall: 12,
+    marginTop: -2, 
+  },
   forgotPasswordGridProps: {
     position: 'absolute',
     right: 0,
@@ -45,7 +50,7 @@ const styles = {
     extraProps: {
       padding: '2px',
       height: { laptop: '54px', desktopMedium: '60px' },
-      width: '60%',
+      width: '100%',
     },
     extraButtonProps: {
       fontFamily: 'Satoshi Bold',

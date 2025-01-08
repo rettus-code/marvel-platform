@@ -41,12 +41,15 @@ const AuthForm = (props) => {
   const renderPolicyInfo = () => {
     return (
       <Grid {...styles.policyInfoGridConfig}>
-        <Typography {...styles.policyInfoTextConfig}>
-          This site is protected by reCAPTCHA and the Google
-        </Typography>
-        <Typography {...styles.linksConfig}>
-          Privacy Policy and Terms of Service apply.
-        </Typography>
+        <div style={{display:"inline-flex"}}>
+          <Typography {...styles.policyInfoTextConfig}>
+            This site is protected by reCAPTCHA and the Google
+          </Typography>
+          <Typography {...styles.linksConfig}>
+            Privacy Policy and Terms of Service apply.
+          </Typography>
+        </div>
+        
       </Grid>
     );
   };

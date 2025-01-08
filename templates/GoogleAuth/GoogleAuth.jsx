@@ -36,7 +36,7 @@ const GoogleAuth = () => {
             text="Sign In Via Google"
             textColor={theme.palette.Common.White['100p']}
             {...styles.googleAuthButtonProps}
-            style={{ border: `2px solid ${theme.palette.Background.gradient.purple4}` }}
+            style={{ border: `2px solid ${theme.palette.Background.gradient.purple4}`, marginTop: '-5vh' }}
         />
     );
 };
