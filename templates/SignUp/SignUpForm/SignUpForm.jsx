@@ -17,6 +17,7 @@ import useWatchFields from '@/libs/hooks/useWatchFields';
 import { AuthContext } from '@/libs/providers/GlobalProvider';
 import AUTH_REGEX from '@/libs/regex/auth';
 import { signUp } from '@/libs/services/user/signUp';
+import GoogleAuth from '@/templates/GoogleAuth';
 import { validatePassword } from '@/libs/utils/AuthUtils';
 
 const DEFAULT_FORM_VALUES = {
@@ -268,6 +269,7 @@ const SignUpForm = (props) => {
         {renderFullNameInput()}
         {renderPasswordAndConfirmPasswordInputs()}
         {renderSubmitButton()}
+        {<GoogleAuth />}
       </Grid>
     </FormContainer>
   );

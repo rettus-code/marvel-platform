@@ -265,6 +265,7 @@ const globalTheme = createTheme({
         success: '#01EFB4',
         grey: '#898989',
         grey1: '#D9D9D9',
+        grey2: '#242731',
         basicPurple: '#6949FF',
         white: '#FFFFFF',
         headerBorderGradient:

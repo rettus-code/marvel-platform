@@ -24,6 +24,7 @@ import { auth, firestore } from '@/libs/redux/store';
 import fetchUserData from '@/libs/redux/thunks/user';
 
 import AUTH_REGEX from '@/libs/regex/auth';
+import GoogleAuth from '@/templates/GoogleAuth';
 
 const DEFAULT_FORM_VALUES = {
   email: typeof window !== 'undefined' && window.location.hostname === 'localhost' ? 'user@test.com' : '',
@@ -158,7 +159,11 @@ const SignInForm = (props) => {
       />
     );
   };
-
+  const renderGoogleAuth = () => {
+    return (
+      <GoogleAuth />
+    )
+  };
   return (
     <FormContainer
       defaultValues={DEFAULT_FORM_VALUES}
@@ -168,6 +173,7 @@ const SignInForm = (props) => {
         {renderEmailInput()}
         {renderPaswordInput()}
         {renderSubmitButton()}
+        {renderGoogleAuth()}
       </Grid>
     </FormContainer>
   );
