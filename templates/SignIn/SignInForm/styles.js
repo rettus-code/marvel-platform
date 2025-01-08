@@ -14,6 +14,12 @@ const styles = {
     mobileSmall: 12,
     marginTop: -2, 
   },
+  breakHrProps: {
+    width: '48%',
+    border: (theme) => `1px solid ${theme.palette.Greyscale[800]}`,
+    height: '1px',
+    marginTop: '10px',
+  },
   forgotPasswordGridProps: {
     position: 'absolute',
     right: 0,

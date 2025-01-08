@@ -265,10 +265,10 @@ const SignUpForm = (props) => {
     return (
       <Grid {...styles.passwordGridProps}>
         <Grid {...styles.breakProps}>
-          <div style={{display:'flex'}}>
-            <hr style={{ width: '48%', border: `1px solid ${theme.palette.Greyscale[600]}`, height: '1px', marginTop: '10px'}} />
+        <div style={{display:'flex'}}>
+            <hr style={{...styles.breakHrProps}} />
             <p style={{ margin: '0 8px', fontSize: '20px' }}>Or</p>
-            <hr style={{ width: '48%', border: `1px solid ${theme.palette.Greyscale[600]}`, height: '1px', marginTop: '10px' }} />
+            <hr style={{...styles.breakHrProps}} />
           </div>
         </Grid>
       </Grid>
