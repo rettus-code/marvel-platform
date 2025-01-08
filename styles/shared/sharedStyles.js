@@ -5,9 +5,9 @@ const sharedStyles = {
     justifyContent: 'center',
     alignItems: 'flex-start',
     rowGap: {
-      desktopLarge: 5,
-      desktop: 4,
-      laptop: 5,
+      desktopLarge: 4,
+      desktop: 3,
+      laptop: 4,
     },
     width: { laptop: '1450px' },
     maxWidth: { laptop: '1450px' },

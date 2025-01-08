@@ -41,7 +41,7 @@ const styles = {
       borderRadius: '20px',
       width: '100%',
       minHeight: { laptop: 600, desktop: 580, desktopMedium: 680 },
-      height: '100%',
+      height: '102%',
       zIndex: 1,
     }),
   },
